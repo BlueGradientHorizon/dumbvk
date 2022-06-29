@@ -1,0 +1,8 @@
+MIDlet-Version: 1.0.0
+MIDlet-Vendor: Ruslan Fomichev
+MIDlet-Jar-URL: DumbVK.jar
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Description: VK client for dumbphones
+MIDlet-1: DumbVK,,dumbvk.DumbVKMidlet
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Name: DumbVK

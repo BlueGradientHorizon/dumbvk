@@ -1,0 +1,111 @@
+dumbvk.DumbVKMidlet -> dumbvk.DumbVKMidlet:
+    void startApp() -> startApp
+    void pauseApp() -> pauseApp
+    void destroyApp(boolean) -> destroyApp
+dumbvk.Records -> e:
+    boolean setRecord(java.lang.String,java.lang.String) -> a
+    java.lang.String getRecordString(java.lang.String) -> a
+    boolean deleteRecord(java.lang.String) -> b
+    boolean isRecordExist(java.lang.String) -> c
+    boolean cleanRecords() -> a
+dumbvk.Request -> b:
+    java.lang.String method -> c
+    java.lang.String URL -> d
+    java.lang.String reqbody -> e
+    java.lang.String respbody -> f
+    java.lang.String mimetype -> g
+    boolean success -> a
+    byte[] data -> b
+    boolean send() -> a
+    java.lang.String getResponse() -> b
+dumbvk.Utils -> f:
+    java.lang.String replaceHttp(java.lang.String) -> b
+    javax.microedition.lcdui.Image fromUrl(java.lang.String,boolean) -> a
+    java.lang.String toUtf8(java.lang.String) -> a
+dumbvk.forms.Forms -> c:
+    javax.microedition.lcdui.Form form -> a
+    javax.microedition.lcdui.List list -> b
+    javax.microedition.midlet.MIDlet midlet -> c
+    void show() -> a
+    void doAfterShow() -> b
+dumbvk.forms.LoginForm -> h:
+    javax.microedition.lcdui.Command ok -> d
+    javax.microedition.lcdui.Command exit -> e
+    javax.microedition.lcdui.Command test -> f
+    javax.microedition.lcdui.TextField login -> g
+    javax.microedition.lcdui.TextField passw -> h
+    void doAfterShow() -> b
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+dumbvk.forms.ProfileForm -> j:
+    javax.microedition.lcdui.Command settings -> d
+    javax.microedition.lcdui.Command exit -> e
+    dumbvk.vkutils.VKSession session -> f
+    void doAfterShow() -> b
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+dumbvk.forms.SMSCodeForm -> i:
+    javax.microedition.lcdui.TextField code -> d
+    javax.microedition.lcdui.Command sendcode -> e
+    javax.microedition.lcdui.Command abort -> f
+    dumbvk.vkutils.VKSession session -> g
+    void commandAction(javax.microedition.lcdui.Command,javax.microedition.lcdui.Displayable) -> commandAction
+dumbvk.vkutils.VKSession -> g:
+    java.lang.String login -> g
+    java.lang.String password -> h
+    boolean need_captcha -> a
+    boolean need_code -> b
+    java.lang.String lasterr -> c
+    java.lang.String apilasterr -> d
+    java.lang.String ACCESS_TOKEN -> e
+    java.lang.String user_id -> f
+    java.lang.String captcha_sid -> i
+    java.lang.String captcha_key -> j
+    java.lang.String code -> k
+    boolean Login() -> a
+    java.lang.String method(java.lang.String,java.lang.String) -> a
+    void setCredentials(java.lang.String,java.lang.String) -> b
+    void setCode(java.lang.String) -> a
+org.json.me.JSONArray -> k:
+    java.util.Vector myArrayList -> a
+    java.lang.Object get(int) -> b
+    org.json.me.JSONObject getJSONObject(int) -> a
+    java.lang.String join(java.lang.String) -> a
+    int length() -> a
+    java.lang.Object opt(int) -> c
+    java.lang.String toString() -> toString
+org.json.me.JSONException -> m:
+org.json.me.JSONObject -> n:
+    java.lang.Boolean TRUE -> a
+    java.lang.Boolean FALSE -> b
+    java.util.Hashtable myHashMap -> d
+    java.lang.Object NULL -> c
+    java.lang.Object get(java.lang.String) -> e
+    org.json.me.JSONArray getJSONArray(java.lang.String) -> a
+    org.json.me.JSONObject getJSONObject(java.lang.String) -> b
+    java.lang.String getString(java.lang.String) -> c
+    boolean has(java.lang.String) -> d
+    java.util.Enumeration keys() -> a
+    java.lang.String trimNumber(java.lang.String) -> f
+    java.lang.String numberToString(java.lang.Object) -> b
+    java.lang.Object opt(java.lang.String) -> g
+    org.json.me.JSONObject put(java.lang.String,java.lang.Object) -> a
+    java.lang.String quote(java.lang.String) -> h
+    java.lang.Object remove(java.lang.String) -> i
+    java.lang.String toString() -> toString
+    java.lang.String valueToString(java.lang.Object) -> a
+org.json.me.JSONObject$Null -> l:
+    boolean equals(java.lang.Object) -> equals
+    java.lang.String toString() -> toString
+org.json.me.JSONString -> a:
+    java.lang.String toJSONString() -> a
+org.json.me.JSONTokener -> d:
+    int myIndex -> a
+    java.lang.String mySource -> b
+    void back() -> a
+    boolean more() -> e
+    char next() -> b
+    java.lang.String next(int) -> a
+    char nextClean() -> c
+    java.lang.String nextString(char) -> a
+    java.lang.Object nextValue() -> d
+    org.json.me.JSONException syntaxError(java.lang.String) -> a
+    java.lang.String toString() -> toString
